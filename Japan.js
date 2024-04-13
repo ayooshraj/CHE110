@@ -7,20 +7,20 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   // Creating the data table
   var data = new google.visualization.DataTable();
-  data.addColumn('number', 'Year');
+  data.addColumn('string', 'Year');
   data.addColumn('number', 'Population (in millions)');
   data.addRows([
-    [1940,  73],
-    [1941, 73.1],
-    [1942, 73.2],
-    [1943, 73.4],
-    [1944, 73.5],
-    [1945, 73.2],
-    [1946, 71.9],
-    [1947, 71.3],
-    [1948, 70.6],
-    [1949, 69.9],
-    [1950, 69.3]
+    ["1940",  73],
+    ["1941", 73.1],
+    ["1942", 73.2],
+    ["1943", 73.4],
+    ["1944", 73.5],
+    ["1945", 73.2],
+    ["1946", 71.9],
+    ["1947", 71.3],
+    ["1948", 70.6],
+    ["1949", 69.9],
+    ["1950", 69.3]
   ]);
 
   // Setting the chart options
