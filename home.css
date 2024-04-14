@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: cd;
+}
+@font-face {
+    font-family: cd;
+    src: url("ClashDisplay-medium.woff");
+}
+a:hover {
+    color: #007bff;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+main {
+    padding: 30px;
+}
+
+#hero {
+    height: 100vh;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-blend-mode:color-dodge;
+    opacity: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;}
