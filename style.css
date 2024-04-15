@@ -2388,7 +2388,7 @@
 }
 
 .card_info {
-		padding-bottom: 20px;
+		padding-bottom: 50px;
 		display: flex; 
 		flex-direction: column; 
 		align-items: center; 
@@ -2400,9 +2400,9 @@ h2, a {
 
 a {
 	text-decoration: none;
-	color: red;
+	color: #83cfc1;
 }
 
 a:hover {
-	color: black;
+	color: white;
 }

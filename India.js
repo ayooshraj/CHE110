@@ -38,7 +38,8 @@ function drawChart() {
       easing: 'out',
       startup: true
     },
-    colors: ['#008000']
+    backgroundColor:'83cfc1',
+    colors: ['#000']
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('lineChart'));
