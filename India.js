@@ -8,7 +8,7 @@ function drawChart() {
   // Creating the data table
   var data = new google.visualization.DataTable();
   data.addColumn('string', 'Year');
-  data.addColumn('number', 'Population (in millions)');
+  data.addColumn('number', 'Population (in millions)','color: white');
   data.addRows([
     ["2014", 1307],
     ["2015", 1322],
@@ -26,10 +26,27 @@ function drawChart() {
   // Setting the chart options
   var options = {
     hAxis: {
-      title: 'Year'
+      title: 'Year',
+      textStyle: {
+        color: '#ffffff'
+      },
+      titleTextStyle: {
+        color: '#ffffff'
+      }
     },
     vAxis: {
-      title: 'Population (in millions)'
+      title: 'Population (in millions)',
+      textStyle: {
+        color: '#ffffff'
+      },
+      titleTextStyle: {
+        color: '#ffffff'
+      },
+      titleTextStyle: {
+        color: '#ffffff',
+        italic: false,
+        fontSize: 14
+      }
     },
     pointSize: 10,
     pointShape: 'circle',
@@ -38,12 +55,8 @@ function drawChart() {
       easing: 'out',
       startup: true
     },
-<<<<<<< HEAD
+    backgroundColor: '#121826',
     colors: ['#83cfc1']
-=======
-    backgroundColor:'83cfc1',
-    colors: ['#000']
->>>>>>> b3f32456c66befa1ca95ac26ba0f9d55980ef1f0
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('lineChart'));

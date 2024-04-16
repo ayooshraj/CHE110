@@ -26,10 +26,27 @@ function drawChart() {
   // Setting the chart options
   var options = {
     hAxis: {
-      title: 'Year'
+      title: 'Year',
+      textStyle: {
+        color: '#ffffff'
+      },
+      titleTextStyle: {
+        color: '#ffffff'
+      }
     },
     vAxis: {
-      title: 'Population (in millions)'
+      title: 'Population (in millions)',
+      textStyle: {
+        color: '#ffffff'
+      },
+      titleTextStyle: {
+        color: '#ffffff'
+      },
+      titleTextStyle: {
+        color: '#ffffff',
+        italic: false,
+        fontSize: 14
+      }
     },
     pointSize: 10,
     pointShape: 'circle',
@@ -38,6 +55,7 @@ function drawChart() {
       easing: 'out',
       startup: true
     },
+    backgroundColor: '#121826',
     colors: ['#ff0000']
   };
 

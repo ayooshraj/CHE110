@@ -2,20 +2,26 @@
 h1{
     text-align: center;
     font-size: 100px;
-    color: #83cfc1;
+    color: #ffffff;
 }
-
+body{
+    background-color: #121826;
+}
 .info-section {
     padding: 20px;
     border: 1px solid #ccc;
-    background-color:  white;
-    color: black;
+    background-color:  #121826;
+    color: white;
     transition: 0.75s ease;
     border-radius: 50px;
     border: transparent;
 }
 .highlight {
-    background-color: #83cfc1;
-    color: white;
+    background-color: #da5e5e;
+    color: black;
     transition: 0.75s ease;
+}
+
+#linechart{
+    color: white;
 }

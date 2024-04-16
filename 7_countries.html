@@ -2,13 +2,21 @@
 <html>
   <head>
     <style>
-.chart {
+      .chart {
         width: 100%;
         height: 500px;
+      }
+      h1{
+        color: white;
+        text-align: center;
+      }
+      body{
+        background-color: #121826;
       }
     </style>
   </head>
   <body>
+    <h1>TOP 7 COUNTRIES WITH THE GREATEST POPULATION</h1>
     <div id="columnchart" class="chart"></div>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -28,7 +36,20 @@
         ]);
 
         var options = {
-          title: 'Top 7 Countries with the Greatest Population'
+          backgroundColor: '#121826',
+          hAxis: {
+            textStyle: {
+              color: 'white'
+            },
+            titleTextStyle: {
+              color: '#ffffff'
+            },
+          },
+          vAxis: {
+            textStyle: {
+              color: 'white'
+            }
+          }
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
